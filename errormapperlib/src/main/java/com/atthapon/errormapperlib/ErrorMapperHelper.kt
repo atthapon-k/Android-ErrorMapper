@@ -20,7 +20,8 @@ object ErrorMapperHelper {
 
     fun unauthorized(code: String, message: String): ErrorFactory {
         return { params: String?, cause: Exception?, causeCode: String? ->
-            Error(ErrorType.UNAUTHORIZED.value, code).build(message, params, cause, causeCode)
+            Error(ErrorType.UNAUTHORIZED.value, code)
+                .build(message, params, cause, causeCode)
         }
     }
 
@@ -38,7 +39,8 @@ object ErrorMapperHelper {
 
     fun internalError(code: String, message: String): ErrorFactory {
         return { params: String?, cause: Exception?, causeCode: String? ->
-            Error(ErrorType.INTERNAL_ERROR.value, code).build(message, params, cause, causeCode)
+            Error(ErrorType.INTERNAL_ERROR.value, code)
+                .build(message, params, cause, causeCode)
         }
     }
 
@@ -50,13 +52,21 @@ object ErrorMapperHelper {
 
     fun notImplement(code: String, message: String): ErrorFactory {
         return { params: String?, cause: Exception?, causeCode: String? ->
-            Error(ErrorType.NOT_IMPLEMENT.value, code).build(message, params, cause, causeCode)
+            Error(ErrorType.NOT_IMPLEMENT.value, code)
+                .build(message, params, cause, causeCode)
         }
     }
 
     fun forbidden(code: String, message: String): ErrorFactory {
         return { params: String?, cause: Exception?, causeCode: String? ->
             Error(ErrorType.FORBIDDEN.value, code).build(message, params, cause, causeCode)
+        }
+    }
+
+    fun unknown(code: String, message: String): ErrorFactory {
+        return { params: String?, cause: Exception?, causeCode: String? ->
+            Error(ErrorType.UNKNOWN_ERROR.value, code)
+                .build(message, params, cause, causeCode)
         }
     }
 }
