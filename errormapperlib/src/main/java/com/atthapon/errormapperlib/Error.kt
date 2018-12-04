@@ -2,11 +2,9 @@ package com.atthapon.errormapperlib
 
 import kotlin.Exception
 
-class Error(var type: String, var code: String) : Exception() {
+class Error(type: String, code: String) : BaseError(type, code) {
     var params: String? = null
     var causeCode: String? = null
-    override var message: String? = null
-    override var cause: Exception? = null
 
     fun build(message: String?, params: String?, cause: Exception?, causeCode: String?): Error {
         return this.apply {
