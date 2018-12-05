@@ -63,7 +63,7 @@ object ErrorMapperHelper {
         }
     }
 
-    fun unknown(code: String, message: String): ErrorFactory {
+    fun unknown(code: String, message: String?): ErrorFactory {
         return { params: String?, cause: Exception?, causeCode: String? ->
             Error(ErrorType.UNKNOWN_ERROR.value, code)
                 .build(message, params, cause, causeCode)
