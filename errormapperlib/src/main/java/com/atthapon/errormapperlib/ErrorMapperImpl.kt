@@ -1,6 +1,6 @@
 package com.atthapon.errormapperlib
 
-class ErrorMapperImpl(private val errorCode: HashMap<String, ErrorFactory>) : ErrorMapper {
+class ErrorMapperImpl(private val errorCode: HashMap<String, ErrorFactory?>) : ErrorMapper {
     override fun <T> map(error: T, params: String?): Error {
         if (error as? BaseError != null) {
             val errorFactory = errorCode[error.code]
