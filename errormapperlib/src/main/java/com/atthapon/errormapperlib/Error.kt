@@ -2,7 +2,7 @@ package com.atthapon.errormapperlib
 
 import kotlin.Exception
 
-class Error(type: String, code: String) : BaseError(type, code) {
+class Error(var type: String, override var code: String) : BaseError(code) {
     var params: String? = null
     var causeCode: String? = null
 
