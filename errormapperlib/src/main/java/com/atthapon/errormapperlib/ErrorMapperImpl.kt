@@ -1,4 +1,4 @@
-package com.atthapon.erdrorlib
+package com.atthapon.errormapperlib
 
 class ErrorMapperImpl(private val errorCode: HashMap<String, ErrorFactory?>) : ErrorMapper {
     override fun <T> map(error: T, params: String?): Error {

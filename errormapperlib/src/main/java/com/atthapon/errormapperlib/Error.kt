@@ -1,4 +1,4 @@
-package com.atthapon.erdrorlib
+package com.atthapon.errormapperlib
 
 
 class Error(var type: String, override var code: String) : BaseError(code) {

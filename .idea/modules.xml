@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/erdror.iml" filepath="$PROJECT_DIR$/erdror.iml" />
-      <module fileurl="file://$PROJECT_DIR$/erdrorlib/erdrorlib.iml" filepath="$PROJECT_DIR$/erdrorlib/erdrorlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/errormapperlib/errormapperlib.iml" filepath="$PROJECT_DIR$/errormapperlib/errormapperlib.iml" />
     </modules>
   </component>
 </project>
