@@ -1,4 +1,4 @@
-package com.atthapon.erdrorlib
+package com.atthapon.errormapperlib
 
 typealias ErrorFactory = (params: String?, cause: Throwable?, causeCode: String?) -> Error
 

@@ -1,4 +1,4 @@
-package com.atthapon.erdrorlib
+package com.atthapon.errormapperlib
 
 enum class ErrorType(val value: String) {
     BAD_REQUEST("BadRequest"),

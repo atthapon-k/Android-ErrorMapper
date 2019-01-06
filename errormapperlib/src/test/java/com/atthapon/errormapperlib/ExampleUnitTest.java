@@ -1,4 +1,4 @@
-package com.atthapon.erdrorlib;
+package com.atthapon.errormapperlib;
 
 import org.junit.Test;
 

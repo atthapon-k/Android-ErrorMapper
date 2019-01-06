@@ -1,4 +1,4 @@
-package com.atthapon.erdrorlib;
+package com.atthapon.errormapperlib;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
