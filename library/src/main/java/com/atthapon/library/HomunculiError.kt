@@ -1,8 +1,8 @@
-package com.atthapon.errormapperlib
+package com.atthapon.library
 
 typealias ErrorFactory = (params: String?, cause: Throwable?, causeCode: String?) -> Error
 
-object ErrorMapperHelper {
+object HomunculiError {
 
     fun customError(type: String, code: String, message: String): ErrorFactory {
         return { params: String?, cause: Throwable?, causeCode: String? ->
