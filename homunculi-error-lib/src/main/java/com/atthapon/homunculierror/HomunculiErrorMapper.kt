@@ -5,7 +5,7 @@ class HomunculiErrorMapper(private val errorCode: HashMap<String, ErrorFactory?>
         if (error as? BaseError != null) {
             var errorFactory = errorCode[error.code]
             if (errorFactory == null) {
-                errorFactory = errorCode[error.cause?.javaClass?.simpleName]
+                errorFactory = errorCode[error.cause?.cause?.javaClass?.simpleName]
             }
             return errorFactory?.invoke(params, error.cause, error.code)
                 ?: HomunculiErrorFactory.unknown(ErrorType.UNKNOWN_ERROR.value, error.message).invoke(
