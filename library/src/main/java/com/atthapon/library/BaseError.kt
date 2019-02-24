@@ -1,4 +1,4 @@
-package com.atthapon.errormapperlib
+package com.atthapon.library
 
 open class BaseError(open var code: String) : Exception() {
     override var cause: Throwable? = null
