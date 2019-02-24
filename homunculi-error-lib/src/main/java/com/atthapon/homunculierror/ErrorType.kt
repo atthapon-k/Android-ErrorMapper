@@ -1,4 +1,4 @@
-package com.atthapon.library
+package com.atthapon.homunculierror
 
 enum class ErrorType(val value: String) {
     BAD_REQUEST("BadRequest"),

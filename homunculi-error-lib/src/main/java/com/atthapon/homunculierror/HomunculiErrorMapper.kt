@@ -1,4 +1,4 @@
-package com.atthapon.library
+package com.atthapon.homunculierror
 
 class HomunculiErrorMapper(private val errorCode: HashMap<String, ErrorFactory?>) : ErrorMapper {
     override fun <T> map(error: T, params: String?): HomunculiError {

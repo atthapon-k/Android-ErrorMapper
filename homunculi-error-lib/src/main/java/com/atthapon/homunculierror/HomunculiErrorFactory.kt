@@ -1,4 +1,4 @@
-package com.atthapon.library
+package com.atthapon.homunculierror
 
 typealias ErrorFactory = (params: String?, cause: Throwable?, causeCode: String?) -> HomunculiError
 
