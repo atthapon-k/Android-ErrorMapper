@@ -1,4 +1,4 @@
-package com.atthapon.library
+package com.atthapon.homunculierror
 
 
 class HomunculiError(var type: String, override var code: String) : BaseError(code) {
